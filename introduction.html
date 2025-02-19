@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="picture.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: url('second.png') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .button-container {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+        }
+        .external-content {
+            position: absolute;
+            right: 150px; /* Adjust this value to move horizontally */
+            top: 50%;    /* Adjust this value to move vertically */
+            transform: translateY(-50%);
+        }
+        .book {
+            width: 264px;  /* 220px increased by 20% */
+            height: 360px; /* 300px increased by 20% */
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button id="backToHomepage" onclick="window.location.href='index.html'">Back to Homepage</button>
+    </div>
+    <div class="external-content">
+        <div class="book">
+            <div class="image-container">
+                <img src="me.jpg" alt="Book Image" />
+            </div>
+            <div class="cover">
+                <p>Hello</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
